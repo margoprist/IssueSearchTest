@@ -16,14 +16,12 @@ public class LambdaStepIssueTest {
     private final static int ISSUE_NUMBER = 1;
 
     @Test
-
     public void searchForIssue() {
         step("Open the main page", () ->
             open(BASE_URL)
         );
         step("Search for repository", (step) -> {
             step.parameter("repository", REPOSITORY);
-
             $(".header-search-input").click();
             $(".header-search-input").sendKeys(REPOSITORY);
             $(".header-search-input").submit();
