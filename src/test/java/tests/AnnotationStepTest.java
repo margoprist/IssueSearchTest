@@ -17,5 +17,4 @@ public class AnnotationStepTest {
         steps.goToIssueTab();
         steps.checkIssueExists(ISSUE_NUMBER);
     }
-
 }

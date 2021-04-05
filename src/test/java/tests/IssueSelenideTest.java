@@ -23,5 +23,4 @@ public class IssueSelenideTest {
         $(withText("Issues")).click();
         $(withText("#" + ISSUE_NUMBER)).should(Condition.exist);
     }
-
 }

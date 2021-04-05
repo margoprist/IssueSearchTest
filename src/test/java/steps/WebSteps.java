@@ -12,7 +12,6 @@ public class WebSteps {
 
     @Step("Open the main page")
     public void openMainPage() {
-
         open("https://github.com");
     }
 
@@ -26,13 +25,11 @@ public class WebSteps {
 
     @Step("Go to issues tab")
     public void goToIssueTab() {
-
         $(withText("Issues")).click();
     }
 
     @Step("Check if issue with number {ISSUE_NUMBER} exists")
     public void checkIssueExists(int ISSUE_NUMBER) {
-
         $(withText("#" + ISSUE_NUMBER)).should(exist);
     }
 }
