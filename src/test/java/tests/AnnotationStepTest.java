@@ -1,4 +1,7 @@
+package tests;
+
 import org.junit.jupiter.api.Test;
+import steps.WebSteps;
 
 public class AnnotationStepTest {
 
