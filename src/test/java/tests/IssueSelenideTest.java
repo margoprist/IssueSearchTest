@@ -16,7 +16,6 @@ public class IssueSelenideTest {
     @Test
     void testIssueSearch() {
 
-
         open(BASE_URL);
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(REPOSITORY);
